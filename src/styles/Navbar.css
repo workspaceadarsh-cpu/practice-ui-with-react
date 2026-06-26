@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 22, 39);
+    height: 69px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    animation: nav 0.7s ease forwards;
+}
+
+.navcontainer {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.name h2 {
+    color: color-mix(in srgb, rgb(195, 139, 148) 60%, rgb(62, 124, 232) 0%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.name h6 {
+    color: color-mix(in srgb, rgb(210, 155, 165) 60%, rgb(22, 92, 214) 0%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo button {
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(280deg, rgb(62, 124, 232), rgb(195, 139, 148));
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.categorySelect option {
+    background-color: #111627;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 842px) {
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-content {
+        display: none;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(17, 22, 39);
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-content.active {
+        display: flex;
+    }
+}
+
+@keyframes nav {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

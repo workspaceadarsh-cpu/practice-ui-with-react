@@ -1,0 +1,278 @@
+.heading {
+    width: 100%;
+    text-align: left;
+    margin-left: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading h1 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.card button {
+  width: 50px;
+  height: 45px;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  margin-bottom: 22px;
+  color: white;
+}
+.card h4 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.card h5 {
+  color: #cbd5e1;
+  font-size: 15px;
+  font-weight: 400;
+}
+.skill:hover{
+    background: linear-gradient(60deg, rgb(10, 17, 30, 0.878), rgba(37, 23, 67, 0.878));
+}
+.runner:hover{
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(13, 46, 59));
+}
+.interview:hover{
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(48, 36, 31));
+    
+}
+.dx:hover { 
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(50, 26, 52));
+}
+
+.skill button {
+    background: linear-gradient(135deg,#7c3aed,#d946ef);
+}
+
+.runner button {
+  background: linear-gradient(135deg,#06b6d4,#14b8a6);
+}
+
+.interview button {
+  background: linear-gradient(135deg,#f59e0b,#f97316);
+}
+
+.dx button {
+  background: linear-gradient(135deg,#ec4899,#f43f5e);
+}
+
+.skill {
+    background: linear-gradient(60deg, rgb(10, 17, 30, 0.878), rgb(34, 22, 58, 0.878));
+    height: 202px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(30, 41, 57);
+}
+
+.runner {
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(10, 39, 50));
+    height: 202px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(30, 41, 57);
+}
+
+.interview {
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(40, 31, 27));
+    height: 202px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(30, 41, 57);
+}
+
+.dx {
+    background: linear-gradient(60deg, rgb(10, 17, 30), rgb(40, 21, 42));
+    height: 202px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(30, 41, 57);
+}
+
+.tech {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1385px;
+    height: 100%;
+    padding: 25px;
+    margin-top: 35px;
+    border: 1px solid rgb(30, 41, 57);
+    border-radius: 15px;
+    background-color: rgb(14, 21, 37);
+}
+.heading-tech p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.heading-tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.js,
+.coming-soon,
+.react {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(54, 64, 82);
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: smaller;
+    font-weight: 200;
+    color: rgb(201, 197, 197);
+    background-color: rgb(31, 40, 57);
+}
+
+@media (max-width: 1400px) {
+    .heading h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .heading{
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .skill,
+    .runner,
+    .interview,
+    .dx {
+        width: 500px;
+    }
+
+    .tech {
+        width: 1022px;
+        margin: auto;
+        gap: 9px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1040px) {
+    .heading h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .heading{
+        justify-content: center;
+        margin-left: auto;
+    }
+    .skill,
+    .runner,
+    .interview,
+    .dx {
+        width: 350px;
+    }
+    .tech {
+        width: 720px;
+        margin: auto;
+        gap: 9px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tech h2{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .heading h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .heading{
+        justify-content: center;
+    }
+    
+    .skill,
+    .runner,
+    .interview,
+    .dx {
+        width: 350px;
+    }
+    .tech {
+        width: 350px;
+        margin: auto;
+        gap: 9px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tech h2{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .heading h1 {
+        font-size: 22px;
+        
+    }
+    .heading{
+        justify-content: center;
+    }
+    
+    .skill,
+    .runner,
+    .interview,
+    .dx {
+        width: 250px;
+    }
+    .tech {
+        width: 250px;
+        margin: auto;
+        gap: 9px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tech h2{
+        text-align: center;
+        align-items: center;
+    }
+}
+

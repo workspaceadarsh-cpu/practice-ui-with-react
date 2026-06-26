@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+.works-main {
+    width: 100%;
+    max-width: 1400px;
+    padding: 40px 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inner-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 15px;
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    text-align: start;
+}
+
+.problem,
+.preview,
+.run {
+    background: linear-gradient(150deg, rgba(23, 34, 58, 0.596), rgb(11, 17, 31));
+    height: 150px;
+    width: 443px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(21, 28, 40);
+    border-radius: 10px;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.problem h3,
+.preview h3,
+.run h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-align: start;
+}
+
+.problem h2,
+.preview h2,
+.run h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: aqua;
+    font-weight: 100;
+    text-align: start;
+}
+
+.problem h5,
+.preview h5,
+.run h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(163, 163, 163);
+    font-weight: 100;
+    text-align: start;
+}
+
+
+.btn button {
+    background: #0b1220;
+    color: #fff;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background-image:
+    linear-gradient(#0b1220, #0b1220),linear-gradient(90deg, #b026ff, #00d9ff);
+    background-clip: padding-box, border-box;
+    box-shadow: 0 0 10px rgba(176, 38, 255, 0.4), 0 0 15px rgba(0, 217, 255, 0.3);
+    margin-bottom: 20px;
+}
+
+.btn:hover button{
+    background-image:
+    linear-gradient(#0b1220, #0b1220),linear-gradient(90deg, #b026ff, #00d9ff);
+    background-clip: padding-box, border-box;
+    box-shadow: 0 0 30px rgba(176, 38, 255, 0.4), 0 0 30px rgba(0, 217, 255, 0.3);
+    
+}
+
+.btn h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.btn span {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(11, 52, 52);
+    color: #00ff66;
+    padding: 4px 12px 4px 12px;
+}
+
+.grantee {
+    background: linear-gradient(150deg, rgba(23, 34, 58, 0.596), rgb(11, 17, 31));
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(21, 28, 40);
+    border-radius: 10px;
+    padding: 24px;
+    justify-content: space-between;
+}
+.grant{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(135, 134, 134);
+}
+
+@media (max-width: 1400px) {
+    .inner-work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .grant{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1040px) {
+    .heading h1{
+        font-size: 28px;
+    }
+    .inner-work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .problem,
+    .preview,
+    .run{
+        width: 690px;
+    }
+    .grant{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    .heading h1{
+        font-size: 20px;
+    }
+    .work{
+        width: 330px;
+    }
+    .inner-work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .problem,
+    .preview,
+    .run{
+        width: 100%;
+    }
+    .grantee{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .heading h1{
+        font-size: 15px;
+    }
+    .work{
+        width: 230px;
+    }
+    .inner-work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .problem,
+    .preview,
+    .run{
+        width: 100%;
+    }
+    .grant h3{
+        font-size: 12px;
+    }
+}

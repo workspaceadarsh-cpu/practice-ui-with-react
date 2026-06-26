@@ -1,0 +1,125 @@
+.main {
+    margin-top: 69px;
+}
+
+.main-1 {
+    background: linear-gradient(165deg, rgb(30, 10, 76, 0.878),rgb(0, 0, 0, 0.878), rgb(4, 33, 53, 0.878));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.main-1 h1 {
+    color: rgba(64, 86, 159, 0.878);
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    padding-top: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: main1_heading 1.2s ease 0s 1 normal forwards;
+}
+
+.main-1 h2 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding-top: 15px;
+    animation: main1_heading 1.8s ease 0.1s 1 normal forwards;
+}
+
+.main-1 button {
+    margin-top: 45px;
+    height: 45px;
+    width: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgb(15, 24, 34);
+    border: none;
+    border-radius: 0px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 50px;
+    animation: main1_heading 1.8s ease 0.2s 1 normal forwards;
+}
+
+.main-1 button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(169, 83, 255);
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.main-1 button:hover::before {
+    transform: scale(1);
+}
+
+
+@media (max-width: 885px) {
+    .main-1 h1{
+        font-size: 49px;
+    }
+    .main-1 h2{
+        font-size: 16px;
+    }    
+}
+
+@media (max-width: 615px) {
+    .main-1 h1{
+        font-size: 35px;
+    }
+    .main-1 h2{
+        font-size: 12px;
+    }    
+}
+
+@media (max-width: 440px) {
+    .main-1 h1{
+        font-size: 27px;
+    }
+    .main-1 h2{
+        font-size: 10px;
+    }
+    .main-1 button{
+        font-size: 12px;
+        height: 35px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    
+}
+
+
+@keyframes main1_heading {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

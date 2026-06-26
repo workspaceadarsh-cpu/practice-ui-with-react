@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.popular-main{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 12px;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(150deg, rgba(23, 34, 58, 0.596), rgb(11, 17, 31));
+    width: 443px;
+    border: 1px solid rgb(21, 28, 40);
+    border-radius: 10px;
+    padding: 24px;
+    gap: 10px;
+}
+.heading-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    font-size: 10px;
+}
+.heading-logo h1{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+@media (max-width: 1040px) {
+    .main-learnsay{
+        width: 610px;
+    }
+    .feedback{
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-learnsay{
+        width: 280px;
+    }
+    .feedback{
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .main-learnsay{
+        width: 180px;
+    }
+    .feedback{
+        width: 100%;
+    }   
+}

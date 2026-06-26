@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+body{
+  background-color: black;
+}
+main {
+    margin-top: 69px;
+}
